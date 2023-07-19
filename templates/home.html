@@ -10,20 +10,30 @@
         height: 320px;
         width: 100%;
         object-fit : cover;
+        margin-bottom: 16px;
       }
       
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+      <img id="banner" class="img-fluid" src="https://portfolio-website.meetupadhyay3.repl.co/static/banner.jpg" alt="Test job Career Banner Image">
   <div class="container">
     <h1 class="text-center mt-2 mb-4">{{company_name}} Job Careers</h1>
       
-    <img id="banner" class="img-fluid" src="https://portfolio-website.meetupadhyay3.repl.co/static/banner.jpg" alt="Test job Career Banner Image">
   
-      <h2  class="text-center mt-2 mb-4">About Test Job Career</h2>
+  
+      <!-- <h2  class="text-center mt-2 mb-4">About Test Job Career</h2> -->
+    <div class="row" style="margin-bottom1:16px;">
+      <div class="col-md-6">
       <p class="lead">
   freestar
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ex dui, tincidunt ac accumsan nec, aliquet vel odio. Aliquam erat volutpat. Mauris viverra nisl blandit convallis dapibus. Praesent iaculis ligula lectus, ut blandit sem malesuada eu. Fusce blandit augue tortor, ac dapibus orci ultricies vitae. Maecenas eu posuere libero. Nullam at lorem eget lacus consectetur tincidunt non quis quam. Praesent ac dignissim risus. Pellentesque ex felis, ultricies at pellentesque non, fringilla et dolor. Etiam quis enim lobortis, dictum arcu nec, tempor erat.</p>
+      </div>
+      <div class="d-none d-md-block col-6">
+      <img src="/static/people.jpg" style="height:320px; border-radius: 4px;">
+      </div>
+    </div>
       
       <h2 class="text-center mt-2 mb-4">Opening Position</h2>
       <div>
@@ -33,9 +43,9 @@
       
       </div>
     <div class="text-center">
-  <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class="mt-4">Copyright Test Job Career</p>
+   <a href="mailto:hello@meetupadhyay59@gmail.com?subject=How may can i help You" type="button" class="btn btn-outline-primary">Contact Us</a>
     </div>
   </div>
+    {% include 'footer.html' %}
   </body>
 </html>
